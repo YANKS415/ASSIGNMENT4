@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  background-image: url(background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height:400px;
+  perspective: 1000px;
+  padding: 10px 30px;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 whitesmoke;
+  
+
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #131212;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #5e5c58;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px 10px 10px 10px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<h1>3 Most Famous Architect's of All Time</h1>
+
+<h3>These famous architects have created buildings that are works of art</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Gehry_web.jpg" alt="Frank Gehry" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style="font-size:2em;">Frank Gehry</h1>
+      
+      <pstyle="font-size:1px;">Frank Owen Gehry (born on 28th February 1929) is a Jewish architect born in Canada and a United States resident based in Los Angeles. He established his practice in Los Angeles, California, in 1962 – and later Gehry Partners, L.L.P. in 2001</p> 
+      <p>Several of his buildings – the Guggenheim Museum in Bilbao, Spain; Walt Disney Concert Hall in downtown Los Angeles; Louis Vuitton Foundation in Paris, France – including his private residence, have become world-renowned tourist attractions. </p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="AG.jpg" alt="Antoni Gaudi" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1 style="font-size:2em;">Antoni Gaudi</h1> 
+        <pstyle="font-size:1px;">Born June 25, 1852 in Spain.Gaudí spent his entire career in Barcelona, where he built all of his projects, the most famous of which is the 1883 cathedral known as La Sagrada Familia, still under construction today.</p> 
+        <p>His style was an ornate mix of Baroque, Gothic, Moorish and Victorian elements that often featured ornamental tile-work, and drew upon forms found in nature. Gaudí’s work would go on to have a tremendous impact on subsequent generations of modernists.</p>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="FLW.jpg" alt="Frank Loyd Wright" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1 style="font-size:1.5em;">Frank Lloyd Wright</h1> 
+        <pstyle="font-size:.5px;">A Wisconsin native born in 1857, Wright revolutionize 20th-century architect. Inspired by the low-lying building that dotted the American plains, Wright created the Prairie House style which emphasized dark decor, and busy embellishments both inside and out.</p> 
+        <p>His most famous building, Falling Water (Bear Run, PA,1935) features stacked rectangular balconies that seem to float over the natural waterfall incorporated into the house. Later in his career, Wright would embrace curvilinear elements, a shift that found its most celebrated expression in the Solomon R. Guggenheim Museum.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
